@@ -8,7 +8,7 @@ The datastructures are
 1. STACK
 2. QUEUE
 3. LINKED LIST 
-4. DOUBLY LINKED LISt
+4. DOUBLY LINKED LIST
 5. BINARY SEARCH TREE
 
 I will adding more of them as I code up more data structures
