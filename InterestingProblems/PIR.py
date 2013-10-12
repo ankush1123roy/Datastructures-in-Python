@@ -28,26 +28,3 @@ while i < m:
     
 PIR(ar)
 
-
-From root Sun Sep 29 06:16:49 2013
-Date: Sun, 29 Sep 2013 06:16:49 -0600
-To: TESTankush1123roy@gmail.com
-Subject: a
-User-Agent: Heirloom mailx 12.5 6/20/10
-MIME-Version: 1.0
-Content-Type: text/plain; charset=us-ascii
-Content-Transfer-Encoding: quoted-printable
-
-=
-
-From root Sun Sep 29 06:18:12 2013
-Date: Sun, 29 Sep 2013 06:18:12 -0600
-To: ankush1123roy@gmail.com, Solution, the, Check
-Subject: a
-User-Agent: Heirloom mailx 12.5 6/20/10
-MIME-Version: 1.0
-Content-Type: text/plain; charset=us-ascii
-Content-Transfer-Encoding: 7bit
-
-TEST EMAIL TO CHECK THE PYTHON CODE
-
