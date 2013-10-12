@@ -4,7 +4,6 @@ def IITKWPCB(ar):
         No1 = ar[i];
         No2 = No1/2;
         I = 0;
-#        import pdb;pdb.set_trace()
         while I >= -No2:
             if gcd(No1,No2+I) ==1:
                 print No2+ I;
@@ -13,7 +12,6 @@ def IITKWPCB(ar):
                 I = I - 1;
 
 m = input()
-#import pdb;pdb.set_trace()
 I = 0;
 ar = [];
 while I<m:
