@@ -1,4 +1,4 @@
-Datastructures-in-Python-
+Datastructures-in-Python
 =========================
 
 Different datastructures are implemented in Python. References are used 
@@ -13,3 +13,5 @@ The datastructures are
 
 I will adding more of them as I code up more data structures
 Some problems (easy)  are also done
+
+Some interesting maths problems mainly are uploaded in the "Interesting Folder "
