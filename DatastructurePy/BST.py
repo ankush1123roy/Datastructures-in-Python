@@ -7,23 +7,23 @@ Author: ankush2@ualbertaa.ca
 import sys
 class Node:
 
-      def __init__(self,info): #constructor of class
+      def __init__(self,info): 
 
-          self.info = info  #information for node
-          self.left = None  #left leef
-          self.right = None #right leef
-          self.level = None #level none defined
+          self.info = info  
+          self.left = None  
+          self.right = None 
+          self.level = None 
 
       def __str__(self):
-            return str(self.info) #return as string
+            return str(self.info)
 
 
 class BinarySearchTree:
 
-      def __init__(self): #constructor of class
+      def __init__(self): 
           self.root = None
 
-      def create(self,val):  #create binary search tree nodes
+      def create(self,val):
           if self.root == None:
              self.root = Node(val)
           else:
@@ -45,7 +45,7 @@ class BinarySearchTree:
                     break 
           return self.root
 
-      def bft(self): #Breadth-First Traversal
+      def bft(self): 
           self.root.level = 0 
           queue = [self.root]
           out = []
@@ -101,7 +101,7 @@ class BinarySearchTree:
                   self.query(ROOT.right, val)
 
       def deleteNode(self,val):
-            ROOT = self.root
+            ROOT = self.root # Not yet complete
       
       def Minimum(self):
             ROOT = self.root
