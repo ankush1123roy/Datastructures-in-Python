@@ -26,7 +26,6 @@ def Remote(ar):
             while K < QN - QS:
                 print 'd',
                 K += 1
-#            import pdb;pdb.set_trace()
         elif (QN - QS) < 0:
             K = 0 
             while K < abs(QN - QS):
