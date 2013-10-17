@@ -11,9 +11,9 @@ def BITONIC(ar):
         else:
             New.append(0)
         idx +=1
-    import pdb;pdb.set_trace()
-
+    
     while i < len(ar) - 1:
+#        import pdb;pdb.set_trace()
         if New[i]  == 1:
             NewCount, P = 0, i 
             Pval = deepcopy(P)
