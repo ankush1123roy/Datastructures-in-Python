@@ -20,7 +20,7 @@ def Remote(ar):
         Char = ord(ar[i]) - ord('a') + 1
         QS, RS = Start/5, Start%5
         QN, RN = Char/5, Char%5
-        
+        K, L = 0,0 
         if (QN - QS) > 0: 
             K = 0 
             while K < QN - QS:
