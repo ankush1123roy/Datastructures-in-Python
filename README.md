@@ -15,3 +15,5 @@ I will adding more of them as I code up more data structures
 Some problems (easy)  are also done
 
 Some interesting maths problems mainly are uploaded in the "Interesting Folder "
+
+These have some interesting problems 
