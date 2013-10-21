@@ -1,4 +1,3 @@
-from copy import deepcopy
 def SumlessthanT(ar,K):
     ar.sort()
     I = 0 
