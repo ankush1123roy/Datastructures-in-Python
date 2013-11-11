@@ -1,7 +1,10 @@
 """ LeetCode: Reorder Single Linked List
 L0 -> Ln -> L1-> Ln-1 -> ...
 
-Author: ankush2@ualberta.ca"""
+    LeetCode: Cycle Detection
+
+Author: ankush2@ualberta.ca
+"""
 
 class Node:
     def __init__(self,data):
@@ -56,6 +59,9 @@ class SLL:
         while ROOT != None:
             print ROOT.data
             ROOT = ROOT.next
+
+    def DetectCycle(self,node):
+        
             
 A = SLL()
 AA = A.create(4)
