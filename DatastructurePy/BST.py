@@ -74,11 +74,12 @@ class BinarySearchTree:
 
 
       def preorder(self,node):
-           if node is not None:
+           if node is not None: 
               print node.info
               self.preorder(node.left)
               self.preorder(node.right)
 
+              
 
       def postorder(self,node):
            if node is not None:
@@ -116,6 +117,20 @@ class BinarySearchTree:
                   Val = ROOT.info
                   ROOT = ROOT.right
             return Val
+
+
+      def SumPre(self,node):
+            if node == None:
+                  return 0
+            else:
+                  return node.info + self.SumPre(node.left) + self.SumPre(node.right)
+
+      def SumDes(self,node):
+            if node != None:
+                  node.info = self.SumPre(node) - node.info
+                  self.SumDes(node.left)
+                  self.SumDes(node.right)
+
                   
 tree = BinarySearchTree()     
 arr = [8,3,1,6,4,7,10,14,13]
@@ -126,9 +141,16 @@ tree.bft()
 print 'Inorder Traversal'
 tree.inorder(tree.root) 
 print 'Preorder Traversal'
-tree.preorder(tree.root) 
+tree.preorder(tree.root)
 print 'Postorder Traversal'
 tree.postorder(tree.root)
 tree.query(root,30) 
 print(tree.Minimum())
 print(tree.Maximum())
+print('________Sum of All Elements____________')
+#import pdb;pdb.set_trace()
+total = tree.SumPre(tree.root)
+print total
+print ('_____Replace Sum of Descendants_________')
+tree.SumDes(tree.root)
+tree.preorder(tree.root)
