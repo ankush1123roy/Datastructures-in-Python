@@ -42,6 +42,5 @@ class BST:
 A = BST()
 A1 = A.insert(3)
 A2  = A.insert(2)
-import pdb;pdb.set_trace()
-A.insert(1)
-A.insert(10)
+A3 = A.insert(1)
+A4 = A.insert(10)
