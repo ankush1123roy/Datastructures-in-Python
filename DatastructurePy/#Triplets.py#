@@ -8,7 +8,7 @@ def Triplets():
             Min = min(A[:I])
             B.append(A[:I].index(Min))
             I += 1
-        I = 0 
+        I = 0
         while I < len(A) - 1:
             Max = max(A[I:])
             C.append(I + A[I:].index(Max))
