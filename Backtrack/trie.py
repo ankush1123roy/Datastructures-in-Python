@@ -1,5 +1,11 @@
 '''
 Trie
+Author: ankush2@ualberta.ca
+Node defined by three entries:
+
+val = character
+ref = Pointers to the rest of the nodes
+eof = To indicate the end of word
 '''
 class Node():
 	
