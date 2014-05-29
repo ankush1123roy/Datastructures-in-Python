@@ -1,8 +1,4 @@
-'''
-This works for both 
-Populate Next Pointers and 
-Populate Next Pointers II
-'''
+
 class Node():
 	def __init__(self,data):
 		self.data = data
