@@ -49,23 +49,33 @@ class BST():
 		return self.root
 
 	def pathSum(self, node, target):
-		if node.left == None and node.right == None and target - node.val == 0:
-				return True
+		if node == None:
+			return False
 		else:
-			return self.pathSum(node.left, target - node.val) or self.pathSum(node.right, target - node.val)
-		
-			
+			if node.left == None and node.right == None and target - node.data == 0:
+					return True
+			else:
+				return self.pathSum(node.left, target - node.data) or self.pathSum(node.right, target - node.data)
+	
+	def pathSum2(self, node, target, sol, temp):
+		if node == None:
+			return 
+		else:
+			if node.left == None and node.right == None and target - node.data == 0:
+				temp.append(node.data)
+				sol.append(temp)
+			else:
+				self.pathSum2(node.left, target - node.data, sol, temp + [node.data])
+				self.pathSum2(node.right, target - node.data, sol, temp + [node.data]) 
+		return sol
 
 if __name__ == '__main__':
-	A = [4,2,3,1,9]
+	A = [8, 4, 7, 11]
 	B = BST()
 	for i in A:
 		T = B.Insert(i)
-	bftTree = B.BFS(T)
-	for i in BFT:
-		ROW = i
-		for i in range(len(ROW) - 1):
-			ROW[i].next = ROW[i+1]
+	print B.pathSum(T, 19)
+	print B.pathSum2(T, 19, sol = [], temp = [])
 	
 	
 
